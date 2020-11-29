@@ -18,9 +18,13 @@ oled.show()
 image = Image.new("1", (oled.width, oled.height))
 draw = ImageDraw.Draw(image)
 
+text = input("Enter the text: ")
+w, h = input("Enter the position w,h with max (128,64): ").split(",")
+w,h  = int(w),int(h)
 # Draw the text
-draw.text((0, 0), "Hello!", font=font, fill=255)
+draw.text((w,h), text, fill=255)
 
 # Display image
 oled.image(image)
 oled.show()
+
