@@ -37,9 +37,18 @@ while (1):
     print(b1,b2,b3,b4)
     if ((b1,b2,b3,b4)==(1,0,0,0)):
         count+=1
-    if count==2:
+    if count==3:
         break
     bin_led(b1,b2,b3,b4)
+
+bin_led(0,0,0,0)
+time.sleep(0.01)
+bin_led(1,1,1,1)
+time.sleep(0.01)
+bin_led(0,0,0,0)
+time.sleep(0.01)
+bin_led(1,1,1,1)
+time.sleep(0.01)
 
 print("Twisted Ring counter")
 b1,b2,b3,b4 = 0,0,0,0
