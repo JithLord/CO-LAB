@@ -15,12 +15,16 @@ oled.fill(0)
 oled.show()
 
 # Open, resize, and convert image to Black and White
-image = (
-    Image.open(sys.argv[1])
-    .resize((oled.width, oled.height), Image.BICUBIC)
-    .convert("1")
-)
+try:
+    image = (
+        Image.open(sys.argv[1])
+        .resize((oled.width, oled.height), Image.BICUBIC)
+        .convert("1")
+    )
 
-# Display the converted image
-oled.image(image)
-oled.show()
+    # Display the converted image
+    oled.image(image)
+    oled.show()
+except KeyboardInterrupt:
+    oled.fill(0)
+    oled.show()
