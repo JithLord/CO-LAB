@@ -38,8 +38,7 @@ while(N):
     bin_led(b1,b2,b3)
 
 
-print("Ring counter done, Now\n")
-print("Twisted Ring counter")
+print("Ring counter done\n")
 
 GPIO.output(11, GPIO.LOW)
 GPIO.output(13, GPIO.LOW)
