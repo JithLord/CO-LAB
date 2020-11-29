@@ -29,6 +29,18 @@ GPIO.setup(35, GPIO.OUT)
 GPIO.setup(37, GPIO.OUT)
 GPIO.setwarnings(False)
 
+print("Ring Counter")
+count = 0
+b1,b2,b3,b4 = 0,0,0,1
+while (1):
+    b1,b2,b3,b4 = b4,b1,b2,b3
+    print(b1,b2,b3,b4)
+    if ((b1,b2,b3,b4)==(1,0,0,0)):
+        count+=1
+    if count==2:
+        break
+    bin_led(b1,b2,b3,b4)
+
 print("Twisted Ring counter")
 b1,b2,b3,b4 = 0,0,0,0
 
