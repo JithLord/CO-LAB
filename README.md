@@ -1,5 +1,8 @@
 # CO-LAB
 
+Run the script to install an requirements for the programs to run.
+
+</br>
 Week 8:
 
 
