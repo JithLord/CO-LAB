@@ -1,6 +1,7 @@
 # CO-LAB
 
 Run the script to install an requirements for the programs to run.
+Issues? Email Me: 308rwe3oa@relay.firefox.com
 
 </br>
 Week 8:
